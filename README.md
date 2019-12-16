@@ -1,6 +1,6 @@
 # WebSocketServer
  
-This project is a WebSocket server in dotnet core, so can be compiled in all supported platform.  
+This project is a WebSocket server in dotnet core, so can be compiled in all supported platforms.  
 I've implemented the standard [rfc6455](https://tools.ietf.org/html/rfc6455).
 
 ## Supported Feature (OpCodes)
@@ -14,7 +14,7 @@ I've implemented the standard [rfc6455](https://tools.ietf.org/html/rfc6455).
 
 * Binary
 
-I've choose to don't support binary because I need to use only json string in my projects
+I've choosen not to support binary because I need to use only json string in my projects
 
 ## Compile
 
@@ -40,7 +40,7 @@ Use the *index.html* file in *Client* folder.
 
 *	*131072 byte limit*
 
-During development i've found a bug in clients implementation (aka all my browsers) that miscalculate the packet size if size is > than 131072, you can test this bug [in official websocket echo service](https://websocket.org/echo.html) by sending 131073 length string, you will see the connection close by server, so I just copied this behavior
+During development i've found a bug in clients implementation (aka all my browsers) that miscalculates the packet size, if size is > than 131072, you can test this bug [in official websocket echo service](https://websocket.org/echo.html) by sending 131073 length string, you will see the connection close by server, so I just copied this behavior
 
 ## Authors
 
